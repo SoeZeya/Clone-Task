@@ -1,0 +1,160 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+  background-color: #070410;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  font-family: 'Teko', sans-serif;
+  font-size: 2em; /* Mobile size */
+  padding: 16px;
+  text-align: center;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 720px) {
+  header {
+    font-size: 3em; /* Tablet and Desktop size */
+    padding: 32px;
+  }
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #231651;
+  padding: 8px; /* Smaller padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px; /* Smaller spacing */
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+nav input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Main Content Container */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px; /* Mobile spacing */
+}
+
+/* Adjust for larger screens */
+@media (min-width: 720px) {
+  .main-content {
+    padding: 32px; /* Tablet spacing */
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding: 48px; /* Desktop spacing */
+  }
+}
+
+/* Featured Movie Full Width */
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+.featured-img {
+  width: 100%;
+  max-width: 600px; /* Adjust the width as needed */
+  height: auto;
+  margin: 0 auto;
+}
+
+.featured-movie .movie-info {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Section Headers */
+.section-header {
+  color: #EEF36A;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+
+/* Movie Content Boxes */
+.movie-box {
+  background-color: #231651;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.movie-box img {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.movie-info {
+  flex-grow: 1;
+}
+
+.movie-info h3 {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5em;
+  margin: 0 0 8px 0;
+}
+
+.movie-info p {
+  margin: 0 0 8px 0;
+}
+
+/* Buttons */
+button {
+  background-color: #4DCCBD;
+  color: #FFFFFF;
+  font-family: 'Teko', sans-serif;
+  font-size: 2em;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px; /* Small spacing */
+  cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 720px) {
+  /* Adjust spacing for tablet */
+  .movie-box {
+    padding: 16px;
+    margin-bottom: 32px; /* Large spacing */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Adjust spacing for desktop */
+  .movie-box {
+    padding: 16px;
+    margin-bottom: 48px; /* Large spacing */
+  }
+}
